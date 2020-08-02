@@ -23,6 +23,12 @@ h1 {
     font-size: 1.5em;
     font-family:'Inconsolata';
 }
+
+h3 {
+    font-size: 1.0em;
+    font-family:'Inconsolata';
+}
+
 p {
     font-size: 1.0em;
     line-height: 1.1em;
@@ -40,4 +46,10 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+.container2 {
+    width:100%;
+    height:auto;
+    padding:1%;
 }
