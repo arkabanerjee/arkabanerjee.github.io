@@ -1,2 +1,4 @@
 title: Arka Banerjee
 theme: jekyll-theme-cayman
+plugins:
+  - jekyll-sitemap
