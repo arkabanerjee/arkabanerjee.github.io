@@ -58,6 +58,9 @@ ul.posts li {
     width: 75%;
   }
 
+strong{
+color: #000000;
+}
 b{
 color:rgb(95, 173, 103);
 }
