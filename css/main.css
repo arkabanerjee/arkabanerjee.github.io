@@ -24,11 +24,13 @@ a:hover {
 h1 {
     font-size: 1.5em;
     font-family:'Merriweather';
+    color: #000000;
 }
 
 h3 {
     font-size: 1.25em;
     font-family:'Merriweather';
+    color: #000000;
 }
 
 p {
