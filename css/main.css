@@ -12,7 +12,10 @@ nav ul, footer ul {
 }
 nav ul li, footer ul li {
     display: inline;
-    padding: 10px 50px;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%
 }
 a {
     text-decoration: underline;
