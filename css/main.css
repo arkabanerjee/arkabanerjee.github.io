@@ -70,4 +70,6 @@ b{
 color:rgb(95, 173, 103);
 }
 
-
+.box {
+    display: flex;
+  }
