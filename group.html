@@ -5,118 +5,292 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Arka Banerjee - Research</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="page-wrapper">
+<head>
+    <title>Arka Banerjee - Research Group</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Style for details containers */
+        details {
+            margin-bottom: 1em;
+            border: 1.5px solid rgba(255, 255, 255, 0.2);
+            padding: 0.5em;
+            border-radius: 12px; /* More rounded edges */
+            transition: all 0.3s ease;
+        }
+		details > p {
+    		color: white;
+    		overflow: hidden;
+    		max-height: 0;
+    		opacity: 0;
+    		transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.3s ease-out;
+    		padding: 0 1em;
+		}
 
-			<!-- Header -->
-            <!-- Header -->
-				<header id="header">
-					<h1 id="logo"><a href="index.html">Arka Banerjee</a></h1>
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html"><b>Home</b></a></li>
-							<!--
-							<li>
-								<a href="#">Layouts</a>
-								<ul>
-									<li><a href="left-sidebar.html">Research</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
-									<li>
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Option 1</a></li>
-											<li><a href="#">Option 2</a></li>
-											<li><a href="#">Option 3</a></li>
-											<li><a href="#">Option 4</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							-->
-							<li><a href="research.html"><b>Research</b></a></li>
-							<li><a href="cv.html"><b>CV</b></a></li>
-							<li><a href="publications.html"><b>Publications</b></a></li>
-                            <li><a href="group.html"><b>Group</b></a></li>
-							<!--<li><a href="#" class="button primary">Sign Up</a></li>-->
-						</ul>
-					</nav>
-				</header>
+		details[open] > p {
+    		max-height: 1000px;
+    		padding: 1em;
+    		opacity: 1;
+		}
 
-			<!-- Main -->
-				<div id="main" class="wrapper style1">
-					<div class="container">
-						<header class="major">
-							<!--<h2>No Sidebar</h2>-->
-							<p>A large part of my research focuses on understanding the process of structure formation in the Universe, and using it to inform our models of fundmental physics. Below you will find some of the questions and techniques I have worked on.</p>
-						</header>
 
-						<!-- Content -->
-							<section id="content">
-								<!--<a href="#" class="image fit"><img src="images/pic_vs_sic.png" alt="" /></a>
-                                <h3>Dolore Amet Consequat</h3>
-								<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at magna consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam cubilia adipiscing interdum aliquet aliquet placerat cubilia accumsan cep ante nullam adipiscing tortor odio. Iaculis adipiscing accumsan nascetur in cras. Lacinia placerat.</p>
-								<p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique faucibus magna adipiscing aliquet blandit nisi dolor accumsan nascetur lorem. Vis enim. Curae. Mi arcu vis aliquam ipsum non accumsan ac mi faucibus amet eu accumsan erat interdum semper accumsan. Eu sagittis tellus accumsan neque lorem penatibus in porttitor. Vivamus commodo curae. Condimentum lobortis praesent id ac lorem. Lorem vis ipsum dolor feugiat consequat dolore adipiscing.</p>-->
-								<h3>Neutrino mass measurements from cosmological surveys</h3>
-								<p><span class="image left"><img src="images/pic_vs_sic.png" alt="" /></span>Neutrinos are the lightest Standard Model particles, but the number density of relic neutrinos from the early Universe are high enough that they affect the formation and growth of structure in the Universe. The size of the effect on various cosmological observables is directly proportional to the total mass of the three neutrino mass eigenstates. Turning this around, precise measurements from cosmology can help constrain the neutrino mass. This is going to be one of the main targets for upcoming cosmological surveys. In this <b><a href="https://arxiv.org/abs/1612.07126">paper</a></b>, we investigated <b>how well the SM neutrino masses can be constrained</b> by combining measurements on large scales (where linear perturbation theory is valid) from two of these experiments, <b>the <a href="https://www.lsst.org/about">LSST</a> at <a href="https://www.vro.org/">VRO</a>, and the <a href="CMB-S4">CMB-S4</a> experiment</b>. In two papers <b>(<a href="https://arxiv.org/abs/2007.06508">here</a> and <a href="https://arxiv.org/abs/2106.13771">here</a>)</b> led by Alejandro Aviles, we developed <b>perturbation theory</b> frameworks that capture the effects of massive neutrinos <b>beyond linear order</b>.</p>
-								<p>To fully capture the effect of mass neutrinos on stucture formation, down to small scales where the structure formation process is nonlinear, neutrinos need to be actively modeled in high resolution N-body simulations. I helped develop <b>two new numerical techniques (<a href="https://arxiv.org/abs/1606.06167">here</a> and <a href="https://arxiv.org/abs/1801.03906">here</a>)</b>, which can track the <b>full nonlinear evolution</b> in massive neutrino cosmologies without suffering from discreteness issues plaguing some of the other methods. These advances in simulation methods are crucial for harnessing the information on neutrino mass from nonlinear scales in various surveys.</p>
-								<p>Neutrinos also produce unique signatures on the clustering of nonlinear objects, like Dark Matter halos, and highly empty regions, called voids. The effect, termed <b>"scale dependent bias"</b> is absent in standard ΛCDM cosmologies. Our <a href="https://arxiv.org/abs/1606.06167">paper</a> was the first to point out that the <b>effect is enhanced in voids</b>. In another <a href="https://arxiv.org/abs/1907.06598">paper</a>, my collaborators and I explored how this effect can be further <b>enhanced by using information about the halo environment</b>.</p>
-								<h3>New summary statistics for cosmological clustering</h3>
-								<p><span class="image left"><img src="images/halo_constraints.png" alt="" /></span>The most widely used statistic for capturing cosmological data is the two-point correlation function, or its Fourier transform, the power spectrum. While this is a complete statistical description of a Gaussian random field (which our Universe is expected to be at early times, and on large scales, even today), it does not capture all the information in the field of interest (galaxy clustering or lensing) once gravitational collapse becomes nonlinear. We, therefore, need other summary statistics to describe clustering on small nonlinear scales to fully harness the power of current and future cosmological surveys.</p>
-								<p>In collaboration with Tom Abel and others, I have worked on <b>developing a (set of) new  summary statistics</b> that is sensitive to all <b>higher order clustering</b> in the data, while being <b>computationally inexpensive</b> to calculate. These statistics comprise the distributions of distances to various nearest neighbor data points from a set of volume filling randoms. The first <a href="https://arxiv.org/abs/2007.13342">paper</a> using these statistics (named <b>kNN-CDFs</b>) explored the <b>improvement in cosmological parameter constraints</b> (over the two-point function) from mildly nonlinear scales. In a second <a href="https://arxiv.org/abs/2102.01184">paper</a> we extended the formalism to also describe <b>cosmological cross-correlations</b>. In this <a href="https://arxiv.org/abs/2107.10287">paper</a>, we demonstrated how the kNN-CDFs of cosmological tracers on quasi-linear scales can be modeled using the same ingredients that are used to model the 2-pt correlation function, while in another <a href="https://arxiv.org/abs/2112.04502">paper</a>, we measured these distributions in actual data and showed that one detect non-Gaussian sigantures in the clustering of extremely massive galaxy cluster.</p>
-								<p>Ealier, I was part of a <a href="https://arxiv.org/abs/1911.11158">paper</a> that investigated parameter constraints from yet another statistic that is sensitive to higher order clustering - the 1-point distribution function of the matter density field.</p>
-								<h3>Self-Interacting Dark Matter (SIDM) phenomenology</h3>
-								<p><span class="image left"><img src="images/projected_full.png" alt="" /></span>While cosmology and other extragalactic phenomena provide the strongest evidence for an invisible clustering component of the Universe called Dark Matter, very little is currently know about the microphysical nature of Dark Matter. As more precise cosmological data from various experiments comes in over the next decade, it is worthwhile to ask if this data can be used to say something about the properties of Dark Matter. One topic that has garnered a lot of interest is whether Dark Matter has strong self-interactions (SIDM), and the signatures of these self-interactions on various cosmological observables.</p>
-								<p>To explore the effects of self-interactions in detail, I helped develop <b>code</b> (described <a href="https://arxiv.org/abs/1906.12026">here</a>) that could be used to <b>study the most general elastic cross sections</b>. Using simulations run with this code, we found in this <a href="https://arxiv.org/abs/1906.12026">paper</a> that <b>weak lensing measurements around massive clusters</b> can provide very <b>tight constraints</b> on the interaction strength at cluster scale.</p>
-								<p>In another <a href="https://arxiv.org/abs/2001.08754">paper</a>, we studied self-interactions on the <b>Milky Way scales</b>, and found that self-interactions leave <b>distinct imprints on the satellite populations</b> of a Milky Way like system, both in radial distributions, and velocity distributions. In another <a href="https://arxiv.org/abs/2109.12120">paper</a> focusing on the effects of DM microphysics on the satellite population of the Milky Way, we explored how the presence of the LMC, and its associated satellites, can be used to distinguish various models of DM.</p>
-								<p>As part of the <b>LSST Dark Matter group</b>, I helped put together this <a href="https://arxiv.org/abs/1902.01055">document</a> which explores how the LSST survey at VRO can help constrain various dark matter models.</p>
-								<!--<ul>
-									<li>Faucibus orci lobortis ac adipiscing integer.</li>
-									<li>Col accumsan arcu mi aliquet placerat.</li>
-									<li>Lobortis vestibulum ut magna tempor massa nascetur.</li>
-									<li>Blandit massa non blandit tempor interdum.</li>
-									<li>Lacinia mattis arcu nascetur lobortis.</li>
-								</ul>-->
-								<h3>N-body Simulation suites and Emulators</h3>
-								<p><span class="image left"><img src="images/flowchart.png" alt="" /></span>In the coming decades, most cosmological analyses will make use of results from suites of high resolution N-body simulations run over a wide parameter range. Among other uses, these simulation efforts are the starting points for the most promising methods of simultaneously learning about both cosmology and galaxy formation processes, which are entangled on scales where future cosmological surveys will have the most precise data. I have been involved in some of the largest simulation efforts of this sort in the world. These include the <a href ="https://aemulusproject.github.io/">Aemulus project</a>, the <a href="https://github.com/franciscovillaescusa/Quijote-simulations">Quijote simulations</a>, the <a href="https://franciscovillaescusa.github.io/hades.html">Hades simulations</a>, and the <a href="http://www.unitsims.org/">UNIT simulations</a>.</p>
-								<p>In the <a href ="https://aemulusproject.github.io/">Aemulus project</a>, we aim to combine the outputs of the <b>N-body simulations</b>, along with <b>models of the galaxy-halo connection</b>, and <b>machine learning techniques</b> to make accurate predictions for various nonlinear observables as a function of cosmology. These predictions can then be compared to data from surveys to <b>jointly constrain cosmological parameters and galaxy formation physics</b>.</p>
+        /* Prevent background color change when open */
+        details[open] {
+            background-color: transparent;
+        }
 
-							</section>
+        /* Summary styling */
+        summary {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            color: #333333; /* Match the horizontal line/dark gray */
+        }
 
-					</div>
-				</div>
+        summary:hover,
+        summary:focus {
+            color: #333333; /* Ensure color stays consistent on hover/focus */
+        }
 
-			<!-- Footer -->
-            <footer id="footer">
-                <ul class="icons">
-                    <li><a href="https://twitter.com/CosmoArka" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-                    <!--<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>-->
-                    <li><a href="https://github.com/arkabanerjee" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-                    <li><a href="mailto:arka.2110@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+        summary img {
+            margin-right: 10px;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        summary span {
+    		font-weight: bold;
+    		font-size: 1.2em;
+    		color: white; /* <-- make the names white */
+		}
+
+        summary:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Smooth expand effect */
+        details > p {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+            padding: 0 1em;
+        }
+		section > h3 {
+    		position: relative;
+    		display: inline-block;
+    		margin-bottom: 1em;
+    		color: white;
+		}
+
+		section > h3::after {
+    		content: "";
+    		position: absolute;
+    		left: 0;
+    		bottom: -5px;
+    		height: 3px;
+    		width: 108%;
+    		background: #ff2674; /* red underline color */
+}
+
+
+    </style>
+</head>
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><a href="index.html">Arka Banerjee</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="research.html"><b>Research</b></a></li>
+                    <li><a href="cv.html"><b>CV</b></a></li>
+                    <li><a href="publications.html"><b>Publications</b></a></li>
+                    <li><a href="group.html"><b>Group</b></a></li>
                 </ul>
-                <ul class="copyright">
-                    <li>&copy; Arka Banerjee.</li>
-                </ul>
-            </footer>
+            </nav>
+        </header>
 
-		</div>
+        <!-- Main -->
+        <div id="main" class="wrapper style1">
+            <div class="container">
+                <header class="major">
+                    <h2>Research Group</h2>
+                </header>
+                <div style="width: 100%; max-width: 1400px; margin: 0 auto 2rem auto;">
+                    <p>Hello! We are part of the Cosmology group at IISER Pune. We work on a variety of topics in cosmology, ranging from simulating different models of 
+                    Dark Matter and Neutrinos to utilizing higher order cross correlations to better constrain and understand cosmology. Exploring even new open questions in Cosmology.</p>
+                    <img src="images/iiser.jpg" alt="IISER Banner"
+                         style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px; display: auto;">
+                         
+                </div>
+                  
+                <!-- PhD Students -->
+                <section>
+                    <h3>PhD Students</h3>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                    <details>
+                        <summary><img src="images/vikhyat.jpg" alt="Vikhyat Sharma"><span>Vikhyat Sharma</span></summary>
+                        <p>Details about Vikhyat Sharma.</p>
+                    </details>
 
-	</body>
+                    <details>
+                        <summary><img src="images/eishica.jpg" alt="Eishica Chand"><span>Eishica Chand</span></summary>
+                        <p>I have been working with Arka since May 2022. I initially started by writing a toy-model N-body code. 
+                            Then, I began working on higher-order statistics, namely k-nearest neighbor (kNN) measurements. 
+                            We collaborated with Dr. Simon Foreman and Dr. Francisco Villaescusa-Navarro to demonstrate the enhancement in the HI-galaxy cross-clustering signal 
+                            within the IllustrisTNG300 simulation using the kNN-field framework, compared to traditional two-point statistics (2PCFs). 
+                            <br>Here’s the manuscript: <a href="https://doi.org/10.1093/mnras/staf433" target="_blank">https://doi.org/10.1093/mnras/staf433</a>. 
+                            <br>Currently, I am working on modeling aspects of kNN statistics to enable stringent constraints on cosmological parameters.</p>
+                    </details>
+
+                    <details>
+                        <summary><img src="images/yash.jpg" alt="Yash Kaushal"><span>Yash Kaushal</span></summary>
+                        <p>I have been working with Arka since August 2023. My research aims to constrain the micro-physical nature of Dark Matter. 
+                            More specifically to study effects of Dark Matter self-interaction on the structure formation. 
+                            My work involves modifying the N-body cosmological simulation code GADGET-2 to include elastic self-scattering interactions 
+                            to understand how such interactions alter the structural properties of dark matter halos. 
+                            To capture halo-scale physics with high resolution while retaining large-scale cosmological context, I run zoom-in simulations.
+                            Looking ahead, I plan to extend this framework to include dissipative SIDM models and explore other SIDM models as well. 
+                            A key goal is to compare these outcomes with the standard Cold Dark Matter (CDM) predictions and identify observational signatures that can distinguish between them.
+                        </p>
+                    </details>
+                </section>
+
+                <!-- Master Thesis Students -->
+                <section>
+                    <h3>Master's Thesis Students</h3>
+
+                    <details>
+                        <summary style="font-weight: normal;">
+                            <img src="images/kaustubh.jpg" alt="Kaustubh Rajesh Gupta">
+                            <span>Kaustubh Rajesh Gupta (Alumnus) ; </span><br>
+                            
+                            <div style="color: white;"> PhD Student @ Swinburne University of Technology</div>
+                        </summary>
+                          
+                        <p>
+                            Working with Arka since August 2021, I am broadly interested in the spatial distribution of celestial objects such as 
+                            <a href="https://science.nasa.gov/universe/galaxies/">galaxies</a> and 
+                            <a href="https://en.wikipedia.org/wiki/Binary_black_hole">binary black holes</a> (BBHs) that trace the 
+                            <a href="https://science.nasa.gov/universe/galaxies/large-scale-structures/">large-scale structure</a> of the universe. 
+                            My research involves measuring the 
+                            <a href="https://www.science.org.au/curious/space-time/galaxy-clustering">clustering</a> properties of these tracers using powerful clustering statistics 
+                            such as the <a href="https://doi.org/10.1093/mnras/staa3604">k-nearest-neighbour (kNN)</a> distributions, 
+                            and using these measurements to inform our understanding of cosmology. 
+                            Over four semester projects, I investigated the impact of halo properties other than mass on the clustering of cluster-scale 
+                            dark matter haloes in cosmological simulations, a phenomenon known as 
+                            <a href="https://doi.org/10.1093/mnras/stx3111">secondary halo bias</a>. 
+                            For my Master’s Thesis, I studied the spatial cross-correlation between galaxies and BBH merger events detected by LIGO 
+                            (<a href="https://doi.org/10.1093/mnras/stae1424">our paper!</a>). 
+                            Presently, I am conducting forecast studies for BBH-galaxy cross-correlations using the 
+                            <a href="https://www.einstein-online.info/en/spotlight/3-generation-gw-detectors/">next generation of gravitational wave detectors</a> 
+                            and working on an exciting group project to publish the kNN codes we have developed over the years as a Python package. 
+                            In May 2025, I am joining the 
+                            <a href="https://www.swinburne.edu.au/research/centres-groups-clinics/centre-for-astrophysics-supercomputing/">Centre for Astrophysics and Supercomputing</a> 
+                            at <a href="https://www.swinburne.edu.au/">Swinburne University of Technology</a> as a PhD student, 
+                            where I will work with Prof. Karl Glazebrook, Prof. Glenn Kacprzak and Dr. Tania Barone on mapping cool gas around galaxies 
+                            in strong gravitational lens systems.
+                            </p>
+                            
+                    </details>
+
+                    <details>
+                        <summary><img src="images/kwanit.jpg" alt="Kwanit Gangopadhyay"><span>Kwanit Gangopaddhay</span></summary>
+                        <p>I have been working with Arka since August 2022 on various topics. My first project involved measuring the effect of massive neutrinos on large-scale structures 
+                            in the universe. Later, we collaborated with Prof. Tom Abel to explore geometric interpretations of the k-Nearest Neighbour (kNN) distribution and its 
+                            connection to other non-Gaussian clustering statistics like Minkowski Functionals and Persistent Homology.
+                            Currently, I’m working with Prof. Tirthankar Roy Choudhury and Anirban Chakroborty on using kNN statistics to distinguish between different models of reionization.</p>
+                    </details>
+                </section>
+
+                <!-- Semester Project Students -->
+                <section>
+                    <h3>Semester Project Students</h3>
+
+                    <details>
+                        <summary><img src="images/harrsh.jpg" alt="Harrsh Goyal"><span>Harrsh Goyal</span></summary>
+                        <p>Ever drawn to the fundamental mysteries of the Universe, I began a project comparing various Dark Matter models (CDM, SiDM, FDM, etc.) 
+                            using weak gravitational lensing peak statistics with Arka in January 2023. This project proved invaluable to my academic journey as it deepened both my 
+                            research experience and understanding of Dark Matter.</p>
+                    </details>
+
+                    <details>
+                        <summary><img src="images/subhankar.jpg" alt="Subhankar Datta"><span>Subhankar Datta</span></summary>
+                        <p>Since August 2023, I have been working under the supervision of Arka on a project aimed at measuring secondary halo bias for cluster sized 
+                            haloes—commonly referred to as secondary halo bias. This phenomenon describes the dependence of halo clustering on properties beyond halo mass. 
+                            My study specifically focuses on halo concentration as the secondary property of interest.
+
+                            Understanding the clustering of dark matter halos is crucial for probing the processes underlying structure formation in the Universe and for constraining 
+                            cosmological parameters. To quantify clustering, I employ both traditional two-point correlation functions and the k-Nearest Neighbor (kNN) CDF as summary statistics. 
+                            
+                            Currently, I am applying this analysis to observational data from the Atacama Cosmology Telescope (ACT) and the Dark Energy Survey (DES), 
+                            with the goal of detecting secondary halo bias in real data. 
+                            </p>
+                    </details>
+
+                    <details>
+                        <summary><img src="images/saptarshi.jpg" alt="Saptarshi Pandey"><span>Saptarshi Pandey</span></summary>
+                        <p>
+                            Since August 2024, I have been working with Arka on N-body cosmological simulations to study structure formation in a two-fluid framework involving 
+                            cold dark matter (CDM) and massive neutrinos as a subdominant, free-streaming component. Building on the generalized two-fluid approach from 
+                            <a href="https://www.researchgate.net/publication/353354358_Cosmological_Constraints_on_Light_but_Massive_Relics" target="_blank">Xu et al. (2021)</a>, 
+                            I’ve been incorporating neutrinos directly as a separate collisionless species in simulations. While my focus is on the two-fluid setup, 
+                            the group’s broader goal is to extend it to a three-fluid model including LiMRs—currently being pursued by PhD student <strong>Vikhyat Sharma</strong>.
+                            
+                            <br>Starting May 2025, I will undertake my Master’s thesis under the joint supervision of Arka and Prof. Elena Giusarma at Michigan Technological University.
+                             The project explores the use of deep generative models to generate realistic cosmological simulations incorporating non-standard physics 
+                             such as modified gravity and massive neutrinos. 
+                        </p>
+                            
+                    </details>
+
+                    <details>
+                        <summary><img src="images/om.png" alt="Om Hebbar"><span>Om Hebbar</span></summary>
+                        <p>Since August 2024, I’ve been investigating baryonic effects on matter distribution in Cosmology. We started by using the Spherical Collapse model 
+                            to describe the probability distribution of dark matter under gravitational evolution and compared that with simulations. 
+                            We aim to explore how baryonic effects alter these predictions and seek ways to decouple them from gravitational dynamics.</p>
+                    </details>
+
+                    <details>
+                        <summary><img src="images/anargha.jpg" alt="Anargha Mandal"><span>Anargha Mandal</span></summary>
+                        <p>Neutrinos, although very light, are numerous enough to affect structure formation in the universe. Inverting the setup, we can try to infer 
+                            constraints on neutrino mass from how matter clusters in the cosmos. Since August 2024, I have been investigating how cross-correlations 
+                            between the 3D matter field and the positions of halos can help us predict theoretical constraints on the total mass of neutrino flavors 
+                            for upcoming cosmological surveys. One of the primary goals of the project is to evaluate whether the k-nearest neighbour formalism for 
+                            tracer-field cross-correlations can give tighter constraints than the conventional two-point cross-correlation function.</p>
+                    </details>
+                </section>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="https://twitter.com/CosmoArka" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://github.com/arkabanerjee" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="mailto:arka.2110@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Arka Banerjee.</li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
